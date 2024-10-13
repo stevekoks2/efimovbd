@@ -21,7 +21,7 @@ def create_table(name, *poles):
         with open(f'{name}.efimov', 'w') as file:
             file.writelines(lines)
         i+=1
-    print(f"База {name} создана!")
+    print(f"Base {name} created!")
 
 def insert_data(basa ,pole, data):
     with open(f'{basa}.efimov', 'r') as file:
@@ -33,4 +33,4 @@ def insert_data(basa ,pole, data):
     
     with open(f'{basa}.efimov', 'w') as file:
         file.writelines(lines)
-    print(f"Информация в базе {basa} в поле {pole} добавлена!")
+    print(f"Information added in {basa} {pole}")
